@@ -1,0 +1,353 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Besley:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+/* Variable globales */
+:root{
+     --main: #fc0000;
+}
+*{
+    font-family: "Besley", serif;
+    transition: 0.2s;
+}
+*::selection{
+    background: var(--main);
+    color: black;
+}
+.btn{
+    width: 300px;
+    background: var(--main);
+    color: white !important;
+    border-radius: 15px !important;
+    transition: 0.3s;
+}
+.btn:hover{
+    letter-spacing: 3px;
+    width: 310px;
+}
+html::-webkit-scrollbar{
+    width: 10px;
+}
+html::-webkit-scrollbar-thumb{
+    background: var(--main);
+}
+html::-webkit-scrollbar-track{
+    background: black;
+}
+/* Navbar */
+.navbar{
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid white;
+}
+.navbar.scroll{
+    background-color: black;
+    padding: 6px;
+}
+.navbar-logo{
+    font-size: 3em;
+    color: white !important;
+    padding: 0px 60px;
+    text-decoration: none;
+}
+.navbar-logo span{
+    font-size: 1.6em;
+    color: var(--main) !important;
+    font-weight: 700;
+}
+.navbar-nav{
+    padding: 0px 60px;
+    margin-top: 40px;
+}
+.nav-link{
+    color: white !important;
+}
+.nav-link:hover{
+    color: var(--main) !important;
+}
+/* Header */
+.header{
+    position: relative;
+}
+.header img{
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: black;
+    opacity: 0.4;
+}
+.header .contenido{
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: black;
+    color: white;
+    padding: 8px;
+    text-align: center;
+}
+.header .contenido h6{
+    font-size: 50px;
+    font-weight: 600;
+}
+.header .contenido h6 span{
+    font-size: 55px;
+    color: var(--main);
+}
+.header #contador{
+    font-size: 60px;
+    font-weight: 600;
+}
+/* Acerca */
+.acerca{
+    margin: 200px auto;
+}
+.acerca img{
+    height: 60vh;
+    width: 100%;
+    object-fit: cover;
+}
+.acerca .col-sm-4{
+    margin-top: 70px;
+}
+.acerca .col-sm-4 h6{
+    font-size: 30px;
+    font-weight: 600;
+    color:  var(--main) !important;
+}
+.acerca .col-sm-4 h5{
+    font-size: 50px;
+    font-weight: 700;
+}
+.acerca .second_row{
+    background: black;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+.acerca .second_row h6{
+    font-size: 50px;
+    font-weight: 600;
+}
+.acerca .second_row h6 span{
+    font-size: 55px;
+    font-weight: 800;
+    color: var(--main) !important;
+}
+/* Sección Personalizada */
+.custom{
+    margin-bottom: 200px ;
+}
+.custom .box{
+    overflow: hidden;
+}
+.custom img{
+    width: 100vw !important; 
+}
+.custom img:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.custom .col-sm-4 h6{
+    font-size: 40px;
+    font-weight: 800;
+    margin-top: 20px;
+}
+.custom .col-sm-4 p{
+    font-size: 13px;
+    margin: 10px auto;
+}
+.custom .third_row{
+    background: black;
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+.custom .third_row h6{
+    font-size: 40px;
+    font-weight: 800;
+}
+.custom .third_row h6 span{
+    color: var(--main) !important;
+    font-size: 45px;
+    text-decoration: underline !important;
+    cursor: pointer;
+}
+/* Segundo Header */
+.second_header{
+    position: relative;
+    margin-bottom: 200px;
+}
+.second_header img{
+    height: 60vh;
+    width: 100%;
+    object-fit: cover;
+}
+.secondheadercontent{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+.secondheadercontent h6{
+    font-size: 50px;
+    font-weight: 600;
+}
+#contador1{
+    font-size: 55px;
+    font-weight: 600;
+}
+/* Sección Unirse */
+.join{
+    margin-bottom: 200px;
+}
+.join h6{
+    font-size: 20px;
+    color: var(--main) !important;
+}
+.join h5{
+    font-size: 40px;
+    font-weight: 800;
+}
+.join .box{
+    overflow: hidden;
+}
+.join img{
+    height: 550px;
+    width: 100%;
+    object-fit: cover;
+}
+.join .box:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.join h5 span{
+    font-size: 50px;
+    font-weight: 900;
+    color: var(--main);
+}
+/* Sección Speakers */
+.speaker{
+    margin-bottom: 200px;
+    position: relative;
+}
+.speaker .content, .noticias .content{
+    text-align: center;
+    margin: 40px auto;
+}
+.speaker .content h6, .noticias .content h6{
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--main);
+}
+.speaker .content h5, .noticias .content h5{
+    font-size: 45px;
+    font-weight: 900;
+}
+.speaker .row{
+    margin: 100px auto;
+}
+.speaker .box{
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+}
+.speaker .box img{
+    height: 450px;
+    width: 100%;
+    object-fit: cover;
+}
+.speaker .box:hover img{
+    transform: scale(1.1);
+}
+.speaker .boxcontent{
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    background: black;
+    opacity: 0;
+}
+.speaker .box:hover .boxcontent{
+    opacity: 1;
+}
+.speaker .boxcontent h6{
+    font-size: 60px;
+}
+/* Sección Noticias */
+.noticias{
+    margin-bottom: 200px;
+}
+.noticias .row{
+    margin: 70px auto;
+}
+.noticias .box{
+    box-shadow: 10px 10px 10px -10px rgba(0, 0, 0, 0.4), inset 10px 10px 10px -10px rgba(0, 0, 0, 0.9);
+}
+.noticias .boxcontent{
+    padding: 20px;
+}
+.noticias .boxcontent h6{
+    font-size: 30px;
+    font-weight: 600;
+}
+.noticias img{
+    cursor: pointer;
+    height: 100%;
+    width: 100%;
+}
+.noticias .boxcontent a{
+    color: var(--main) !important;
+    font-size: 25px;
+}
+.noticias .mid{
+    margin-top: 40px;
+}
+/* Footer */
+footer{
+    background: black;
+    padding: 20px;
+    text-align: center;
+}
+footer p{
+    font-size: 25px;
+    color: white !important;
+    font-weight: 600;
+}
+/* POP-UPS */
+.modal-body{
+     background: black !important;
+     color: white !important;
+}
+.modal-body .container h6{
+    font-size: 40px;
+    text-align: center;
+    margin: 20px auto;
+    font-weight: 600;
+}
+.modal-body .container input, .modal-body .container textarea{
+    background: none !important;
+    font-weight: 600;
+    color: white !important;
+    border-radius: 15px !important;
+}
+.modal-body .container .form-group{
+    margin: 10px auto;
+}
+.modal-body .container .btn{
+    width: 100%;
+    margin: 10px auto;
+}
+.modal-body .container input::placeholder, .modal-body .container textarea::placeholder{
+    color: white;
+}
